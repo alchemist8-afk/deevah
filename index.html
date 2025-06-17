@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deevah — Beauty Meets Hustle</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div id="sidebar">
+  <div class="logo">Deevah</div>
+  <ul class="nav-links">
+    <li><a href="#" class="services-dropdown">Services <i class="fas fa-chevron-down"></i></a>
+      <ul class="services-submenu">
+        <li><a href="#barbershop-hub">Barber Cuts</a></li>
+        <li><a href="#massage-hub">Massage Therapy</a></li>
+        <li><a href="#braids-hub">Braiding Styles</a></li>
+        <li><a href="#makeup-hub">Makeup Artistry</a></li>
+        <li><a href="#nails-hub">Nails (Pedi/Manicure)</a></li>
+        <li><a href="#lashes-hub">Eyelash Extensions</a></li>
+        <li><a href="#skincare-hub">Facials & Skincare</a></li>
+      </ul>
+    </li>
+    <li><a href="#products-section">Products</a></li>
+    <li><a href="#grab-a-bite-section">Grab a Bite</a></li>
+    <li><a href="#game-night-section">Game Night</a></li>
+  </ul>
+</div>
+
+<!-- Menu Toggle Button -->
+<div id="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+
+  <!-- Header -->
+  <header class="hero-section">
+    <div class="overlay">
+      <nav class="navbar">
+        <h1 class="logo">Deevah</h1>
+        <div class="nav-buttons">
+          <a href="#join" class="btn-outline">Join as Beautician</a>
+          <a href="#book" class="btn-fill">Book Services</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h2>Where Beauty Meets Hustle</h2>
+        <p>Your favorite stylist, now one tap away. At home or on the go.</p>
+        <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+      </div>
+    </div>
+  </header>
+  <!-- ===== AUTHENTICATION SECTION ===== -->
+<section id="signin" class="auth-section">
+  <div class="auth-card">
+    <h2>Welcome Back</h2>
+    <form id="login-form">
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+      <p>Don't have an account? <a href="#create-account">Create one</a></p>
+    </form>
+  </div>
+</section>
+
+<section id="create-account" class="auth-section">
+  <div class="auth-card">
+    <h2>Create Your Account</h2>
+    <form id="signup-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+
+      <label>I'm joining as:</label>
+      <div class="role-options">
+        <label><input type="radio" name="role" value="client" required> Client</label>
+        <label><input type="radio" name="role" value="artist" required> Artist (Service Provider)</label>
+        <label><input type="radio" name="role" value="business" required> Business Owner</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="#signin">Log in</a></p>
+    </form>
+  </div>
+</section>
+
+</body>
+
+
+  <!-- Features -->
+  <section class="features-section">
+    <h3>What You'll Love</h3>
+    <div class="features">
+      <div class="feature-card">
+        <h4>On-Demand Booking</h4>
+        <p>Hair, makeup, nails — anytime, anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Beautician Dashboards</h4>
+        <p>Upload your work, earn, and grow your brand.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Built-In Commerce</h4>
+        <p>Sell products, book services, all from one place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Demo -->
+  <section class="video-demo">
+    <h3>See Deevah in Action</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo Video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+    
+  <!-- Featured Beauticians Section -->
+  <section id="beauticians" class="beauticians-section">
+    <h2>💅 Featured Beauticians</h2>
+    <div class="beauticians-grid">
+      <div class="beautician-card">
+        <img src="assets/beauticians/1.jpg" alt="Keisha Glam - Makeup Artist">
+        <h3>Keisha Glam</h3>
+        <p>Makeup & Lashes — Nairobi</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="beautician-card">
+        <img src="assets/beauticians/2.jpg" alt="Sylvia Styles - Hair Stylist">
+        <h3>Sylvia Styles</h3>
+        <p>Hair & Nails — Kampala</p>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="beautician-card">
+        <img src="assets/beauticians/3.jpg" alt="Luna Touch - Skincare Specialist">
+        <h3>Luna Touch</h3>
+        <p>Massage & Skincare — Kigali</p>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Marketplace Section -->
+  <section class="marketplace-section">
+    <h2>Deevah Beauty Picks</h2>
+    <div class="marketplace-grid">
+      <div class="marketplace-item">
+        <img src="https://via.placeholder.com/200x200?text=Skincare+Kit" alt="Glow Skincare Kit">
+        <h4>Glow Skincare Kit</h4>
+        <span>$29.99</span>
+        <button>Add to Cart</button>
+      </div>
+      <div class="marketplace-item">
+        <img src="https://via.placeholder.com/200x200?text=Lipsticks" alt="Matte Lipstick Set">
+        <h4>Matte Lipstick Set</h4>
+        <span>$19.99</span>
+        <button>Add to Cart</button>
+      </div>
+      <div class="marketplace-item">
+        <img src="https://via.placeholder.com/200x200?text=Brush+Set" alt="Pro Brush Collection">
+        <h4>Pro Brush Collection</h4>
+        <span>$24.99</span>
+        <button>Add to Cart</button>
+      </div>
+      <div class="marketplace-item">
+        <img src="https://via.placeholder.com/200x200?text=Hair+Oils" alt="Essential Hair Oils">
+        <h4>Essential Hair Oils</h4>
+        <span>$15.50</span>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Trending Looks Section -->
+  <section class="trending-section">
+    <h2>🔥 Trending Looks</h2>
+    <p>Real styles by real beauticians — see something you like?</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls poster="https://via.placeholder.com/300x200?text=Hair+Style+1">
+          <source src="sample1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4>Summer Braids by Lynda</h4>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="video-card">
+        <video controls poster="https://via.placeholder.com/300x200?text=Makeup+Look+2">
+          <source src="sample2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h4>Soft Glam by Nia</h4>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Book Your Glow Section -->
+  <section class="glow-section">
+    <div class="glow-content">
+      <h2>Book Your Glow</h2>
+      <p>Ready for your transformation? Browse trusted beauticians, book instantly, and let the magic come to you.</p>
+      <a href="#" class="glow-btn">Start Now</a>
+    </div>
+  </section>
+  
+  <!-- Deevah Challenge Section -->
+  <section class="challenge-section">
+    <div class="challenge-content">
+      <h2>Deevah Challenge</h2>
+      <p>Join our monthly Glow-Up Challenge! Complete tasks, post your results, and earn Deevah Coins.</p>
+      <a href="#" class="challenge-btn">Join the Challenge</a>
+    </div>
+  </section>
+  
+  <!-- Order a Bite Section -->
+  <section class="order-bite-section">
+    <div class="container">
+      <h2>Order a Bite 🍱</h2>
+      <p class="section-intro">Too much scrolling? Take a break and grab a tasty meal—delivered fresh from local restaurants!</p>
+      <div class="food-grid">
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Sushi Platter">
+          <h4>Sushi Delight</h4>
+          <span>$12.99</span>
+          <button>Order Now</button>
+        </div>
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1606755962778-73bb5b7e99c5" alt="Burger Combo">
+          <h4>Classic Burger Combo</h4>
+          <span>$9.50</span>
+          <button>Order Now</button>
+        </div>
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642" alt="Vegan Bowl">
+          <h4>Fresh Vegan Bowl</h4>
+          <span>$10.25</span>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Talk to a Professional Section -->
+  <section class="talk-to-pro-section">
+    <div class="container">
+      <h2>Talk to a Professional 💬</h2>
+      <p class="section-intro">Need advice, support, or just someone who gets it? Speak directly with vetted beauty and wellness professionals.</p>
+      <div class="pro-grid">
+        <div class="pro-card">
+          <img src="https://images.unsplash.com/photo-1603415526960-f7e0328ed79e" alt="Camille A. - Therapist">
+          <h4>Camille A.</h4>
+          <p>Therapist - Mind & Body Wellness</p>
+          <button>Book a Session</button>
+        </div>
+        <div class="pro-card">
+          <img src="https://images.unsplash.com/photo-1590080877075-c8856f01fd33" alt="Lisa B. - Beauty Coach">
+          <h4>Lisa B.</h4>
+          <p>Beauty Coach - Skin & Hair</p>
+          <button>Book a Session</button>
+        </div>
+        <div class="pro-card">
+          <img src="https://images.unsplash.com/photo-1614285299219-3f042c3c3fc3" alt="Dr. Kemi N. - Nutritionist">
+          <h4>Dr. Kemi N.</h4>
+          <p>Certified Nutritionist</p>
+          <button>Book a Session</button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ===== BARBERSHOP HUB ===== -->
+<section id="barbershop-hub" class="service-hub">
+  <!-- Hero Section -->
+  <div class="hub-hero">
+    <div class="hub-hero-content">
+      <h2>Premium Barbershop Experience</h2>
+      <p>Precision cuts, beard sculpting, and traditional hot towel shaves</p>
+      <button class="btn-hub-primary">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Services Grid (3-4 service cards) -->
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-img">
+        <img src="assets/hubs/barbershop/classic-cut.jpg" alt="Classic Haircut">
+      </div>
+      <div class="service-card-content">
+        <h3>Classic Haircut</h3>
+        <p>Professional scissor or clipper cut</p>
+        <div class="service-meta">
+          <span class="service-price">$25</span>
+          <span class="service-duration">45 min</span>
+        </div>
+        <button class="btn-service">Book Now</button>
+      </div>
+    </div>
+    <!-- Add more service cards -->
+  </div>
+
+  <!-- Barbers Section -->
+  <div class="barbers-grid">
+    <div class="barber-card">
+      <img src="assets/hubs/barbershop/barber-james.jpg" alt="Barber James">
+      <h4>James K.</h4>
+      <p>Master Barber</p>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+    </div>
+    <!-- Add more barber cards -->
+  </div>
+</section>
+<!-- ===== END BARBERSHOP HUB ===== -->
+ <!-- ===== MASSAGE HUB ===== -->
+<section id="massage-hub" class="service-hub">
+  <!-- Hero -->
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/massage/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Healing at Your Fingertips</h2>
+      <p>Certified therapists for deep relaxation</p>
+      <button class="btn-hub-primary"><i class="fas fa-spa"></i> Book Stress Relief</button>
+    </div>
+  </div>
+
+  <!-- Trending Services -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-bolt"></i> Most Booked</h2>
+    <div class="services-grid">
+      <div class="service-card trending-card">
+        <div class="trending-badge">30% OFF</div>
+        <div class="service-card-img">
+          <img src="assets/hubs/massage/couples.jpg" alt="Couples Massage">
+        </div>
+        <div class="service-card-content">
+          <h3>Couples Massage</h3>
+          <p>Side-by-side sessions with champagne</p>
+          <div class="service-meta">
+            <span class="service-price">$150–$220</span>
+            <span class="service-duration"><i class="fas fa-clock"></i> 90 min</span>
+          </div>
+          <div class="service-stats">
+            <span><i class="fas fa-heart"></i> 92% satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <!-- Add hot stone, prenatal, etc. -->
+    </div>
+  </div>
+
+  <!-- Artist Tiers -->
+  <div class="hub-section artist-tiers">
+    <div class="tier-toggle">
+      <button class="tier-btn active" data-tier="top">Spa Professionals</button>
+      <button class="tier-btn" data-tier="budget">Mobile Therapists</button>
+      <button class="tier-btn" data-tier="new">Sports Specialists</button>
+    </div>
+
+    <!-- Top Tier -->
+    <div class="providers-grid tier-content" id="top-tier">
+      <div class="provider-card elite-card">
+        <div class="elite-badge">15 yrs experience</div>
+        <img src="assets/hubs/massage/therapist-1.jpg" alt="Naomi W.">
+        <h4>Naomi W.</h4>
+        <p>Specialty: Aromatherapy</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (576)</div>
+        <div class="artist-details">
+          <span><i class="fas fa-map-marker-alt"></i> Available at Serenity Spa</span>
+          <span><i class="fas fa-certificate"></i> Licensed since 2010</span>
+        </div>
+        <button class="book-btn">See Availability</button>
+      </div>
+    </div>
+
+    <!-- Budget Tier -->
+    <div class="providers-grid tier-content" id="budget-tier" style="display:none">
+      <div class="provider-card">
+        <img src="assets/hubs/massage/therapist-2.jpg" alt="Marcus J.">
+        <h4>Marcus J.</h4>
+        <p>Specialty: Chair Massage</p>
+        <div class="rating">⭐⭐⭐⭐☆ (89)</div>
+        <div class="artist-details">
+          <span><i class="fas fa-home"></i> Travels to you</span>
+          <span><i class="fas fa-wallet"></i> From $35/hr</span>
+        </div>
+        <button class="book-btn">Instant Book</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recommendations -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-magic"></i> For Your Needs</h2>
+    <div class="recommendation-engine">
+      <div class="rec-filters">
+        <button class="rec-filter active">Back Pain</button>
+        <button class="rec-filter">Prenatal</button>
+        <button class="rec-filter">Athletes</button>
+      </div>
+      <div class="rec-results">
+        <div class="rec-card">
+          <img src="assets/hubs/massage/deep-tissue.jpg" alt="Deep Tissue">
+          <div class="rec-details">
+            <h4>Deep Tissue + Cupping</h4>
+            <p><strong>8 therapists</strong> specialize in chronic pain</p>
+            <button class="btn-outline">View Options</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MAKEUP HUB ===== -->
+<section id="makeup-hub" class="service-hub">
+  <!-- Hero -->
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/makeup/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Face Artistry Redefined</h2>
+      <p>Bridal, editorial, and special effects</p>
+      <button class="btn-hub-primary"><i class="fas fa-palette"></i> Book Trial</button>
+    </div>
+  </div>
+
+  <!-- Occasion Filters -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-filter"></i> Browse by Occasion</h2>
+    <div class="occasion-filters">
+      <button class="occasion-filter active" data-occasion="all">All</button>
+      <button class="occasion-filter" data-occasion="bridal">Bridal</button>
+      <button class="occasion-filter" data-occasion="editorial">Editorial</button>
+      <button class="occasion-filter" data-occasion="events">Events</button>
+    </div>
+    <div class="services-grid occasion-results">
+      <!-- Results populate via JS -->
+      <div class="service-card" data-occasion="bridal">
+        <div class="service-card-img">
+          <img src="assets/hubs/makeup/bridal.jpg" alt="Bridal Makeup">
+        </div>
+        <div class="service-card-content">
+          <h3>Bridal Package</h3>
+          <p>Includes trial + touch-up kit</p>
+          <div class="service-meta">
+            <span class="service-price">$150+</span>
+            <span class="service-duration">2-3 hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== NAILS HUB ===== -->
+<section id="nails-hub" class="service-hub">
+  <!-- Hero -->
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/nails/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Nail Art That Speaks</h2>
+      <p>Gel, acrylics, and luxury pedicures</p>
+      <button class="btn-hub-primary"><i class="fas fa-paint-brush"></i> Book Mani-Pedi</button>
+    </div>
+  </div>
+
+  <!-- Service Tiers -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-gem"></i> Service Levels</h2>
+    <div class="price-tiers">
+      <div class="price-card basic">
+        <h3>Basic</h3>
+        <p class="price">$25–$40</p>
+        <ul>
+          <li>Standard polish</li>
+          <li>Quick file/shape</li>
+        </ul>
+        <button class="btn-outline">View Artists</button>
+      </div>
+      <div class="price-card popular">
+        <div class="popular-badge">BEST VALUE</div>
+        <h3>Premium</h3>
+        <p class="price">$45–$75</p>
+        <ul>
+          <li>Gel/SNS extensions</li>
+          <li>Hand massage</li>
+        </ul>
+        <button class="btn-primary">Book Now</button>
+      </div>
+      <div class="price-card luxury">
+        <h3>Luxury</h3>
+        <p class="price">$80–$150</p>
+        <ul>
+          <li>3D nail art</li>
+          <li>Gold leaf/chrome</li>
+        </ul>
+        <button class="btn-outline">See Portfolio</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nail Artists -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-hand-sparkles"></i> Top Nail Techs</h2>
+    <div class="providers-grid">
+      <div class="provider-card">
+        <img src="assets/hubs/nails/tech-1.jpg" alt="Lena K.">
+        <h4>Lena K.</h4>
+        <p>Specialty: Russian Manicures</p>
+        <div class="artist-details">
+          <span><i class="fas fa-award"></i> 5 awards</span>
+          <span><i class="fas fa-calendar"></i> 2-week wait</span>
+        </div>
+        <button class="book-btn">Join Waitlist</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== LASHES HUB ===== -->
+<section id="lashes-hub" class="service-hub">
+  <!-- Hero -->
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/lashes/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Lashes That Wow</h2>
+      <p>Classic, volume, and mega volume extensions</p>
+      <button class="btn-hub-primary"><i class="fas fa-eye"></i> Find Your Style</button>
+    </div>
+  </div>
+
+  <!-- Style Quiz -->
+  <div class="hub-section style-quiz">
+    <h2 class="hub-section-title"><i class="fas fa-question-circle"></i> Not Sure What You Need?</h2>
+    <div class="quiz-container">
+      <div class="quiz-step active" data-step="1">
+        <h3>What's Your Desired Look?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-style="natural">
+            <img src="assets/hubs/lashes/natural.jpg" alt="Natural">
+            <span>Natural</span>
+          </button>
+          <button class="quiz-option" data-style="glam">
+            <img src="assets/hubs/lashes/glam.jpg" alt="Glam">
+            <span>Glam</span>
+          </button>
+        </div>
+      </div>
+      <!-- Additional steps would go here -->
+    </div>
+  </div>
+
+  <!-- Lash Artists -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-certificate"></i> Certified Lash Techs</h2>
+    <div class="providers-grid">
+      <div class="provider-card">
+        <img src="assets/hubs/lashes/tech-1.jpg" alt="Sophia L.">
+        <h4>Sophia L.</h4>
+        <p>Specialty: Russian Volume</p>
+        <div class="artist-details">
+          <span><i class="fas fa-syringe"></i> Hypoallergenic glue</span>
+          <span><i class="fas fa-clock"></i> 2-hr appointments</span>
+        </div>
+        <button class="book-btn">See Work</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKINCARE HUB ===== -->
+<section id="skincare-hub" class="service-hub">
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/skincare/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Clinical Skin Treatments</h2>
+      <p>Facials, peels, and acne solutions</p>
+      <button class="btn-hub-primary">Book Consultation</button>
+    </div>
+  </div>
+  
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-img">
+        <img src="assets/hubs/skincare/hydrafacial.jpg" alt="HydraFacial">
+      </div>
+      <div class="service-card-content">
+        <h3>HydraFacial</h3>
+        <p>Deep cleansing + hydration</p>
+        <div class="service-meta">
+          <span class="service-price">$90+</span>
+          <span class="service-duration">45 min</span>
+        </div>
+        <button class="btn-service">Book Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== BRAIDS HUB ===== -->
+<section id="braids-hub" class="service-hub">
+  <!-- Hero with CTA -->
+  <div class="hub-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), url('assets/hubs/braids/hero-bg.jpg')">
+    <div class="hub-hero-content">
+      <h2>Braids That Turn Heads</h2>
+      <p>From knotless to Fulani—book a braider near you</p>
+      <button class="btn-hub-primary"><i class="fas fa-calendar-alt"></i> Book Instantly</button>
+    </div>
+  </div>
+
+  <!-- Trending Now Section -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-fire"></i> Trending Now</h2>
+    <div class="services-grid">
+      <!-- Service Card 1: Knotless Braids -->
+      <div class="service-card trending-card">
+        <div class="trending-badge">HOT</div>
+        <div class="service-card-img">
+          <img src="assets/hubs/braids/knotless.jpg" alt="Knotless Braids">
+        </div>
+        <div class="service-card-content">
+          <h3>Knotless Braids</h3>
+          <p>Gentle on edges, lasts 6-8 weeks</p>
+          <div class="service-meta">
+            <span class="service-price">$120–$200</span>
+            <span class="service-duration"><i class="fas fa-clock"></i> 4-6 hrs</span>
+          </div>
+          <div class="service-stats">
+            <span><i class="fas fa-star"></i> 4.9 (320 bookings)</span>
+          </div>
+        </div>
+      </div>
+      <!-- Add 2-3 more trending services -->
+    </div>
+  </div>
+
+  <!-- Artist Tiers -->
+  <div class="hub-section artist-tiers">
+    <div class="tier-toggle">
+      <button class="tier-btn active" data-tier="top">Top Artists</button>
+      <button class="tier-btn" data-tier="budget">Budget-Friendly</button>
+      <button class="tier-btn" data-tier="new">New & Rising</button>
+    </div>
+
+    <!-- Top Artists -->
+    <div class="providers-grid tier-content" id="top-tier">
+      <div class="provider-card elite-card">
+        <div class="elite-badge">Deevah Pro</div>
+        <img src="assets/hubs/braids/artist-1.jpg" alt="Alicia K.">
+        <h4>Alicia K.</h4>
+        <p>Specialty: Micro Braids</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (428)</div>
+        <div class="artist-details">
+          <span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+          <span><i class="fas fa-bolt"></i> Fast Bookings</span>
+        </div>
+        <button class="book-btn">View Portfolio</button>
+      </div>
+      <!-- Add 3-5 top artists -->
+    </div>
+
+    <!-- Budget Artists (Hidden by default) -->
+    <div class="providers-grid tier-content" id="budget-tier" style="display:none">
+      <div class="provider-card">
+        <img src="assets/hubs/braids/artist-2.jpg" alt="Jamila M.">
+        <h4>Jamila M.</h4>
+        <p>Specialty: Basic Box Braids</p>
+        <div class="rating">⭐⭐⭐⭐☆ (112)</div>
+        <div class="artist-details">
+          <span><i class="fas fa-wallet"></i> Starts at $80</span>
+        </div>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <!-- Add budget artists -->
+    </div>
+  </div>
+
+  <!-- Recommendations Engine -->
+  <div class="hub-section">
+    <h2 class="hub-section-title"><i class="fas fa-magic"></i> Personalized Picks</h2>
+    <div class="recommendation-engine">
+      <div class="rec-filters">
+        <span>Filter:</span>
+        <button class="rec-filter active">For Your Hair Type</button>
+        <button class="rec-filter">Near You</button>
+        <button class="rec-filter">Under 3 Hours</button>
+      </div>
+      <div class="rec-results">
+        <!-- Dynamically loaded via JS based on filters -->
+        <div class="rec-card">
+          <img src="assets/hubs/braids/rec-1.jpg" alt="Recommended Style">
+          <div class="rec-details">
+            <h4>Goddess Braids</h4>
+            <p>Best for <strong>4C hair</strong> | 5 artists available</p>
+            <button class="btn-outline">See Options</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Waitlist -->
+  <section class="waitlist-section" id="waitlist">
+    <h3>Be First to Know When We Launch</h3>
+    <form id="waitlist-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Deevah Inc. All rights reserved.</p>
+  </footer>
+</body>
+</html>
